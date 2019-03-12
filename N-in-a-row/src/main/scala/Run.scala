@@ -11,7 +11,7 @@ object Run {
     var currentPlayer = Player.Player1
 
     println(game)
-    while ({inputColumn = scala.io.StdIn.readInt(); inputColumn !=  -1 && !game.isGameOver()}) {
+    while ({inputColumn = scala.io.StdIn.readInt(); inputColumn !=  -1 && !game.isGameOver}) {
 
       game.sinkChecker(inputColumn, currentPlayer)
 
@@ -19,13 +19,13 @@ object Run {
 
       println(game)
 
-      if(game.isGameOver())
+      if(game.isGameOver)
         print("Game over: " + game.gameState)
     }
   }
 
   // Notice how we do not need to define a return type if the return type is clear from the implementation.
-  def otherPlayer(currentPlayer: Player) = {
+  def otherPlayer(currentPlayer: Player): Player.Value = {
     if(currentPlayer == Player.Player1)
       Player.Player2
     else
