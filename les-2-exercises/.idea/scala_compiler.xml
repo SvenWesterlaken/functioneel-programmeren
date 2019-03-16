@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="les-2-exercises" />
+    <profile name="sbt 1" modules="les-2-exercises_9721,les-2-exercises">
+      <option name="postfixOps" value="true" />
+    </profile>
   </component>
 </project>
