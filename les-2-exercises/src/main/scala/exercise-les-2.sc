@@ -8,9 +8,9 @@ def doubleHead(list: List[Int]): List[Int] = {
   head * 2::tail
 }
 
-def add(x: Int, y: Int): Int => Int = _ => x + y
+def add(x: Int, y: Int): () => Int = () => x + y
 
-def multiplyBy(x: Int, y: Int): Int => Int = _ => x * y
+def multiplyBy(x: Int, y: Int): () => Int = () => x * y
 
 def applyFunc(x: Int, y: Int, f: (Int, Int) => Int): Int = f(x,y)
 
